@@ -4,7 +4,7 @@ publishDate: 2020-03-02 00:00:00
 img: /assets/stock-1.jpg
 img_alt: Axon Studio Website Image
 description: |
- "This website encapsulates an immersive digital experience, reflecting the creative essence of Axon Studio"
+ This website encapsulates an immersive digital experience, reflecting the creative essence of Axon Studio
 
 tags:
   - Design
