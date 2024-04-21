@@ -1,14 +1,14 @@
 ---
-title: ‎  
+title: Agency
 publishDate: 2020-03-02 00:00:00
 img: /assets/stock-1.jpg
-img_alt: Iridescent ripples of a bright blue and pink liquid
+img_alt: Axon Studio Website Image
 description: |
-  We designed a whodunnit-style game to introduce Markdown formatting. Suspense — suspicion — syntax! 
+ "This website encapsulates an immersive digital experience, reflecting the creative essence of Axon Studio"
 
 tags:
   - Design
-  - Dev
+  - Development
   - User Testing
 ---
 

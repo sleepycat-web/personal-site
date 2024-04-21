@@ -1,13 +1,13 @@
 ---
-title: Duvet Genius
+title: Organisation
 publishDate: 2020-03-04 00:00:00
 img: /assets/stock-3.jpg
-img_alt: Pearls of silky soft white cotton, bubble up under vibrant lighting
+img_alt: SMITMUN Website Image
 description: |
-  We developed a virtual showcase for the softest bedding imaginable.
+ This website has pioneered an immersive online platform that embodies SMITMUN's mission.
 tags:
   - Design
-  - Dev
+  - Development
   - Branding
 ---
 
