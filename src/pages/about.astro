@@ -1,6 +1,5 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-
 import ContactCTA from '../components/ContactCTA.astro';
 import Hero from '../components/Hero.astro';
 ---
@@ -23,25 +22,65 @@ import Hero from '../components/Hero.astro';
 			<section>
 				<h2 class="section-title">Background</h2>
 				<div class="content">
-					<p>Welcome to my corner of the web! I'm Amlan, a passionate developer dedicated to crafting exceptional digital experiences. With a keen eye for detail and a knack for problem-solving, I specialize in building sleek and responsive websites that not only look great but also perform flawlessly across all devices, while also optimizing them for higher search engine rankings. 
+					<p>Welcome to my corner of the web! I'm Amlan, a passionate developer dedicated to crafting exceptional digital experiences. With a keen eye for detail and a knack for problem-solving, I specialize in building sleek and responsive websites that not only look great but also perform flawlessly across all devices, while also optimizing them for higher search engine rankings.
 					</p>
-						<p>Whether it's bringing a client's vision to life or tackling a challenging problem, I thrive on the creativity and technicality of the development process.</p> 
-
-
-					
+					<p>Whether it's bringing a client's vision to life or tackling a challenging problem, I thrive on the creativity and technicality of the development process.</p>   
 				</div>
 			</section>
 			<section>
 				<h2 class="section-title">Education</h2>
 				<div class="content">
-					<p>B.Tech CSE (Coputer Science Engineering) - Sikkim Manipal Institute of Technology</p>
+					<p>B.Tech CSE (Computer Science Engineering) - Sikkim Manipal Institute of Technology</p>
 				</div>
 			</section>
 			<section>
 				<h2 class="section-title">Skills</h2>
 				<div class="content">
-					<p>Wordpress and Web Development</p>
-					<p>Search Engine Optimisation</p>
+					<div class="skills-grid">
+						<div class="skill-category">
+							<h3>Languages</h3>
+							<div class="skill-tags">
+								<span>C</span>
+								<span>C++</span>
+								<span>Java</span>
+								<span>JavaScript</span>
+								<span>TypeScript</span>
+							</div>
+						</div>
+						<div class="skill-category">
+							<h3>Frameworks</h3>
+							<div class="skill-tags">
+								<span>Next.js</span>
+								<span>CSS3</span>
+								<span>Astro</span>
+								<span>React</span>
+								<span>Tailwind</span>
+								<span>Bootstrap</span>
+							</div>
+						</div>
+						<div class="skill-category">
+							<h3>Database Management</h3>
+							<div class="skill-tags">
+								<span>MySQL</span>
+								<span>MongoDB</span>
+							</div>
+						</div>
+						<div class="skill-category">
+							<h3>Cloud and Security Tools</h3>
+							<div class="skill-tags">
+								<span>Vercel</span>
+								<span>Netlify</span>
+								<span>Cloudflare</span>
+							</div>
+						</div>
+						<div class="skill-category">
+							<h3>Others</h3>
+							<div class="skill-tags">
+								<span>WordPress</span>
+								<span>Search Engine Optimization</span>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>
@@ -91,6 +130,38 @@ import Hero from '../components/Hero.astro';
 		text-decoration-color: currentColor;
 	}
 
+	/* New styles for skills section */
+	.skills-grid {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	.skill-category h3 {
+		font-size: var(--text-md);
+		color: var(--gray-100);
+		margin-bottom: 0.75rem;
+	}
+
+	.skill-tags {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.75rem;
+	}
+
+	.skill-tags span {
+		background-color: var(--gray-800);
+		color: var(--gray-200);
+		padding: 0.4rem 1rem;
+		border-radius: 2rem;
+		font-size: var(--text-sm);
+		transition: background-color 0.2s ease;
+	}
+
+	.skill-tags span:hover {
+		background-color: var(--gray-700);
+	}
+
 	@media (min-width: 50em) {
 		.about {
 			display: grid;
@@ -104,6 +175,15 @@ import Hero from '../components/Hero.astro';
 		section {
 			display: contents;
 			font-size: var(--text-lg);
+		}
+
+		/* Responsive adjustments for skills */
+		.skills-grid {
+			gap: 2.5rem;
+		}
+
+		.skill-tags {
+			gap: 1rem;
 		}
 	}
 </style>
